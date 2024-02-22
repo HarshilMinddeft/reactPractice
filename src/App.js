@@ -6,13 +6,18 @@ import Footer from "./components/footer.js";
 import Game from "./components/game.js";
 import Api from "./components/Api.js";
 import Postapi from "./components/postapi.js";
-
+import Reduxee from "./components/reduxee.js";
+import { Provider } from "react-redux";
+import { store } from "./components/utils/redux/store.js";
 function App() {
   return (
     <div>
+      <Provider store={store}>
+        <Reduxee />
+      </Provider>
       {/* <Postapi /> */}
       {/* <Api /> */}
-      <Game />
+      {/* <Game /> */}
       {/* <Hreader /> */}
       {/* <Footer title="this is third pae" /> */}
     </div>
