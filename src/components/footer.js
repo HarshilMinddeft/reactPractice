@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Footer = (props) => {
+  const Footer = (props) => {
   const [name, setName] = useState("");
 
   return (

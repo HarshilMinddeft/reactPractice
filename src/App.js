@@ -9,12 +9,16 @@ import Postapi from "./components/postapi.js";
 import Reduxee from "./components/reduxee.js";
 import { Provider } from "react-redux";
 import { store } from "./components/utils/redux/store.js";
+import RW from "./components/etherss/rw.js";
+import Eventdisplay from "./components/etherss/eventdisplay.js";
 function App() {
   return (
     <div>
-      <Provider store={store}>
-        <Reduxee />
-      </Provider>
+      <RW />
+      <Eventdisplay />
+      {/* <Provider store={store}>
+        <Reduxee /> 
+      </Provider> */}
       {/* <Postapi /> */}
       {/* <Api /> */}
       {/* <Game /> */}

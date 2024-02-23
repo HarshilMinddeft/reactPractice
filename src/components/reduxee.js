@@ -9,7 +9,7 @@ const Reduxee = () => {
       <Count />
       <button onClick={(e) => dispatch({ type: "Decrement" })}>Decrease</button>
     </div>
-  );                                                    
+  );                                         
 };
 
 export default Reduxee;
